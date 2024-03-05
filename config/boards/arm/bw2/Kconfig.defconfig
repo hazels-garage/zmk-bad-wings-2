@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if BOARD_BAD_WINGS
+if BOARD_BW2
 
 config BOARD
-    default "bad_wings"
+    default "bw2"
 
 config ZMK_KEYBOARD_NAME
     default "Bad Wings v2"
