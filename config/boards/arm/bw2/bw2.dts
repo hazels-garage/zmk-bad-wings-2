@@ -65,6 +65,34 @@
 
 };
 
+&spi2 {
+    status = "okay";
+    pinctrl-0 = <&spi1_sck_pa5 &spi1_mosi_pa7 &spi1_miso_pa6>;
+    pinctrl-names = "default";
+
+     glidepoint: glidepoint@1 {
+        compatible = "cirque,pinnacle";
+        spi-max-frequency = <200000>;
+        reg = <1>;
+        status = "okay";
+        dr-gpios = <&gpioa 4 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "2x";
+        sleep;
+        no-taps;
+        };
+}
+
+/ {
+  glidepoint_listener {
+    compatible = "zmk,input-listener";
+    device = <&glidepoint>;
+
+    xy-swap;
+    y-invert;
+    x-invert;
+  };
+};
 
 &usb {
     status = "okay";
