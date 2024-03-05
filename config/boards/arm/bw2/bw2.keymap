@@ -138,9 +138,9 @@
 
         NAVIGATION_layer {
             bindings = <
-                &none           &kp F2          &out OUT_USB    &out OUT_BLE    &bt BT_CLR      &none       &kp HOME    &kp UP      &kp END     &kp BSPC 
-                &kp TAB         &none           &bt BT_SEL 0    &bt BT_SEL 1    &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
-                &none           &none           &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp DEL    
+                &kp ESC         &kp F1  &kp F4    &kp F7    &kp F10          &none       &kp HOME    &kp UP      &kp END     &kp BSPC 
+                &kp TAB         &kp F2  &kp F5    &kp F8    &kp F11         &none       &kp LEFT    &kp DOWN    &kp RIGHT   &kp RET
+                &none           &kp F3  &kp F6    &kp F9    &kp F12         &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp DEL    
                                                 &trans          &trans          &trans          &trans      &trans      &trans
             >;
         };
