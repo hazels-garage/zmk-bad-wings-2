@@ -43,8 +43,8 @@
         diode-direction = "col2row";
 
         col-gpios
-        = <&gpiof 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&gpiof 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        = <&gpiof 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&gpiof 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpioc 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpioc 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpioc 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
