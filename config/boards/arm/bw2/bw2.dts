@@ -81,7 +81,7 @@
         sleep;
         no-taps;
         };
-}
+};
 
 / {
   glidepoint_listener {
