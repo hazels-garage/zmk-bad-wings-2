@@ -2,5 +2,5 @@
 # SPDX-License-Identifier: MIT
 
 config BOARD_BAD_WINGS
-    bool "Bad Wings v2"
+    bool "BadWings2"
     depends on SOC_STM32F072XB
