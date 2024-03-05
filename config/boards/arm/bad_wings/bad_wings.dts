@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    model = "Bad Wings v2";
-    compatible = "hazel,bad_wings_2", "st,stm32f072";
+    model = "Bad Wings";
+    compatible = "hazel,bad_wings", "st,stm32f072";
 
     chosen {
         zephyr,sram = &sram0;
