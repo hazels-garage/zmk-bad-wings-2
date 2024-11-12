@@ -120,7 +120,7 @@ zephyr_udc0: &usb {
 layout_0: layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Bad Wings";
-        transform = &transform;
+        transform = <&transform>;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  300  100    1500   650   150>
             , <&key_physical_attrs 100 100  400  125    1500   650   150>
