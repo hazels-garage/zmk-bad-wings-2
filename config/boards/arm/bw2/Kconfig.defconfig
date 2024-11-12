@@ -16,3 +16,14 @@ config ZMK_KSCAN_MATRIX_POLLING
     default y
 
 endif 
+
+if ZMK_STUDIO
+
+choice ZMK_BEHAVIOR_LOCAL_ID_TYPE
+    default ZMK_BEHAVIOR_LOCAL_ID_TYPE_CRC16
+endchoice 
+
+config ZMK_STUDIO_RPC_TX_BUF_SIZE
+    default 32
+
+endif
