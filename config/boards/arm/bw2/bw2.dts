@@ -19,7 +19,7 @@
         zephyr,flash = &flash0;
         zmk,kscan = &kscan;
         zmk,matrix_transform = &transform;
-        zmk,physical-layout = &physical_layout0;
+        zmk,physical-layout = &layout_0;
     };
 
     transform: transform {
