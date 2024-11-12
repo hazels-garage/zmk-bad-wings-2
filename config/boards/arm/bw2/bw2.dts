@@ -7,7 +7,7 @@
 /dts-v1/;
 #include <st/f0/stm32f072Xb.dtsi>
 #include <st/f0/stm32f072v(8-b)tx-pinctrl.dtsi>
-
+#include <physical_layouts.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -20,6 +20,7 @@
         zephyr,console = &cdc_acm_uart;
         zmk,kscan = &kscan;
         zmk,matrix_transform = &transform;
+        zmk,physical-layout = &physical_layout0;
     };
 
     transform: transform {
@@ -119,13 +120,11 @@
             reg = <0x0001e800 0x00001800>;
         };
     };
-};
-#include <physical_layouts.dtsi>
-/ {
-    layout_0: layout_0 {
+
+layout_0: layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Bad Wings";
-
+        transform = &transform;
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100  300  100    1500   650   150>
             , <&key_physical_attrs 100 100  400  125    1500   650   150>
@@ -175,5 +174,6 @@
             physical-layout = <&layout_0>;
             positions = <>;
         };
-    };
+    };    
 };
+
