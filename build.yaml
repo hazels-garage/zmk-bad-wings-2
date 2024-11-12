@@ -1,2 +1,3 @@
 include:
   - board: bw2
+    snippet: studio-rpc-usb-uart
