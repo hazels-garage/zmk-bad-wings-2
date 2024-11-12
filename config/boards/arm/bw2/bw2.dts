@@ -120,3 +120,60 @@
         };
     };
 };
+#include <physical_layouts.dtsi>
+/ {
+    layout_0: layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Bad Wings";
+
+        keys  //                     w   h    x    y     rot    rx    ry
+            = <&key_physical_attrs 100 100  300  100    1500   650   150>
+            , <&key_physical_attrs 100 100  400  125    1500   650   150>
+            , <&key_physical_attrs 100 100  500  145    1500   650   150>
+            , <&key_physical_attrs 100 100  200  150    1500   650   150>
+            , <&key_physical_attrs 100 100  300  200    1500   650   150>
+            , <&key_physical_attrs 100 100  100  225    1500   650   150>
+            , <&key_physical_attrs 100 100  400  225    1500   650   150>
+            , <&key_physical_attrs 100 100  500  245    1500   650   150>
+            , <&key_physical_attrs 100 100  200  250    1500   650   150>
+            , <&key_physical_attrs 100 100  300  300    1500   650   150>
+            , <&key_physical_attrs 100 100  100  325    1500   650   150>
+            , <&key_physical_attrs 100 100  400  325    1500   650   150>
+            , <&key_physical_attrs 100 100  500  345    1500   650   150>
+            , <&key_physical_attrs 100 100  200  350    1500   650   150>
+            , <&key_physical_attrs 100 100  100  425    1500   650   150>
+            , <&key_physical_attrs 100 100  400  450    1500   650   150>
+            , <&key_physical_attrs 100 100  575  470    2500   650   150>
+            , <&key_physical_attrs 100 100  750  460    3500   650   150>
+            , <&key_physical_attrs 100 100  450  460 (-3500)   650   150>
+            , <&key_physical_attrs 100 100  625  470 (-2500)   650   150>
+            , <&key_physical_attrs 100 100  900  100 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  800  125 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  700  145 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1000  150 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  900  200 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  800  225 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1100  225 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  700  245 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1000  250 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  900  300 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  800  325 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1100  325 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  700  345 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1000  350 (-1500)   650   150>
+            , <&key_physical_attrs 100 100 1100  425 (-1500)   650   150>
+            , <&key_physical_attrs 100 100  800  450 (-1500)   650   150>
+            ;
+    };
+
+    position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+
+        layout_0 {
+            physical-layout = <&layout_0>;
+            positions = <>;
+        };
+    };
+};
