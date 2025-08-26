@@ -1,2 +1,4 @@
 include:
   - board: bw2
+  - board: bw2
+    shield: bw2_cirque
